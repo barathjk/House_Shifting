@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/shifters.css">
+  <script src="js/shifters.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <title>Rapid Shifters</title>
+</head>
+
+<body>
+  <div class="headers">
+    <h2>Rapid Shifters</h2>
+  </div>
+
+  <div class="formbold-main-wrapper">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="formbold-form-wrapper">
+      <img src="your-image-url-here.jpg">
+      <div>
+        <div class="formbold-input-group">
+          <label for="name" class="formbold-form-label"> Name </label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" class="formbold-form-input" />
+          <span class="error" id="nameerror"></span>
+        </div>
+
+        <div class="formbold-input-group">
+          <label for="email" class="formbold-form-label"> Email </label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" class="formbold-form-input" />
+          <span class="error" id="emailerror"></span>
+        </div>
+
+        <div class="formbold-input-group">
+          <label for="phone" class="formbold-form-label"> Phone Number </label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter your phone" class="formbold-form-input" />
+          <span class="error" id="phoneerror"></span>
+        </div>
+
+
+        <div class="formbold-input-group">
+          <label class="formbold-form-label">
+            Origin City
+          </label>
+
+          <select class="formbold-form-select" name="origin" id="origin">
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Mysore">Mysore</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+          </select>
+        </div>
+
+        <div class="formbold-input-group">
+          <label class="formbold-form-label">
+            Destination City
+          </label>
+
+          <select class="formbold-form-select" name="destination" id="destination">
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Mysore">Mysore</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+          </select>
+        </div>
+
+        <button class="formbold-btn" onclick="validateCityInfo()">Continue</button>
+      </div>
+    </div>
+  </div>
+  <style>
+
+  </style>
+</body>
