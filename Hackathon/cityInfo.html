@@ -12,66 +12,111 @@
 </head>
 
 <body>
-  <div class="headers">
-    <h2>Rapid Shifters</h2>
-  </div>
-
-  <div class="formbold-main-wrapper">
-    <!-- Author: FormBold Team -->
-    <!-- Learn More: https://formbold.com -->
-    <div class="formbold-form-wrapper">
-      <img src="your-image-url-here.jpg">
-      <div>
-        <div class="formbold-input-group">
-          <label for="name" class="formbold-form-label"> Name </label>
-          <input type="text" name="name" id="name" placeholder="Enter your name" class="formbold-form-input" />
-          <span class="error" id="nameerror"></span>
-        </div>
-
-        <div class="formbold-input-group">
-          <label for="email" class="formbold-form-label"> Email </label>
-          <input type="email" name="email" id="email" placeholder="Enter your email" class="formbold-form-input" />
-          <span class="error" id="emailerror"></span>
-        </div>
-
-        <div class="formbold-input-group">
-          <label for="phone" class="formbold-form-label"> Phone Number </label>
-          <input type="tel" name="phone" id="phone" placeholder="Enter your phone" class="formbold-form-input" />
-          <span class="error" id="phoneerror"></span>
-        </div>
-
-
-        <div class="formbold-input-group">
-          <label class="formbold-form-label">
-            Origin City
-          </label>
-
-          <select class="formbold-form-select" name="origin" id="origin">
-            <option value="Coimbatore">Coimbatore</option>
-            <option value="Mysore">Mysore</option>
-            <option value="Bangalore">Bangalore</option>
-            <option value="Chennai">Chennai</option>
-          </select>
-        </div>
-
-        <div class="formbold-input-group">
-          <label class="formbold-form-label">
-            Destination City
-          </label>
-
-          <select class="formbold-form-select" name="destination" id="destination">
-            <option value="Coimbatore">Coimbatore</option>
-            <option value="Mysore">Mysore</option>
-            <option value="Bangalore">Bangalore</option>
-            <option value="Chennai">Chennai</option>
-          </select>
-        </div>
-
-        <button class="formbold-btn" onclick="validateCityInfo()">Continue</button>
-      </div>
+    <div class="headers">
+        <h2>Rapid Shifters</h2>
     </div>
-  </div>
-  <style>
 
-  </style>
+    <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="formbold-form-wrapper">
+            <img src="your-image-url-here.jpg">
+            <div>
+                <div class="formbold-input-group">
+                    <label for="name" class="formbold-form-label"> Name </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="formbold-form-input" />
+                    <span class="error" id="nameerror"></span>
+                </div>
+
+                <div class="formbold-input-group">
+                    <label for="email" class="formbold-form-label"> Email </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="formbold-form-input" />
+                    <span class="error" id="emailerror"></span>
+                </div>
+
+                <div class="formbold-input-group">
+                    <label for="email" class="formbold-form-label"> Phone Number </label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter your phone" class="formbold-form-input" />
+                    <span class="error" id="phoneerror"></span>
+                </div>
+
+
+                <div class="formbold-input-group">
+                    <label class="formbold-form-label">
+                        Origin City
+                    </label>
+
+                    <select class="formbold-form-select" name="origin" id="origin">
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Mysore">Mysore</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </div>
+
+                <div class="formbold-input-group">
+                    <label class="formbold-form-label">
+                        Destination City
+                    </label>
+
+                    <select class="formbold-form-select" name="destination" id="destination">
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Mysore">Mysore</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </div>
+
+                <div class="formbold-input-group">
+                    <label class="formbold-form-label">
+                        Shifting Date
+                    </label>
+                    <input type="date" name="date" id="date" placeholder="Enter Shifting date" class="formbold-form-input" />
+                </div>
+
+                <button class="formbold-btn" onclick="validateCityInfo()">Continue</button>
+                <button class="previous" onclick="window.history.back()">Previous</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+        </ul>
+        <p>&copy;2023 The Four-ce | All Rights Reserved</p>
+    </footer>
 </body>
+</html>
